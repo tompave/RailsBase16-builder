@@ -74,7 +74,7 @@
 			<key>name</key>
 			<string>Punctuation</string>
 			<key>scope</key>
-			<string>punctuation.definition.variable, punctuation.definition.parameters, punctuation.definition.array</string>
+			<string>punctuation.definition.variable, punctuation.definition.parameters, punctuation.definition.array, punctuation.definition.constant</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -195,13 +195,27 @@
 			<key>name</key>
 			<string>Strings, Inherited Class</string>
 			<key>scope</key>
-			<string>string, constant.other.symbol, entity.other.inherited-class</string>
+			<string>string, entity.other.inherited-class</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#<%= @base["0B"]["hex"] %></string>
 			</dict>
 		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Symbols</string>
+			<key>scope</key>
+			<string>constant.other.symbol</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#<%= @base["09"]["hex"] %></string>
+			</dict>
+		</dict>
+
+
 		<dict>
 			<key>name</key>
 			<string>Integers</string>
