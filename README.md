@@ -7,6 +7,31 @@ It adds a more fine-grained syntax highlighting for specific elements of the Rub
 The [original base16](https://github.com/chriskempson/base16), on the other hand, is (also) an awesome and flexible system to quickly create color schemes for a variety of editors, IDEs, terminals, browser tools and code parsers. Check the original repo, as it features dynamic examples and documentation on the templates.  
 
 
+## Improved syntax highlighting
+
+* symbols
+    * use a different color from that of the strings.
+    * the colon uses the default source color, like the other markers (`@`, `$`).
+* ERB
+    * `<%=  %>` tags use a color more detectable in HTML files.
+    * embedded ruby code has a specific background color (as seen in Railscasts and Sublime's default Cobalt color scheme).
+* String Interpolation
+    * embedded ruby code uses its normal color, not the string one. 
+    * embedded ruby code has a specific background color.
+* Operators
+    * operators (`=`, `+`, `&&`, `and`, etc) use a specific color.
+* SCSS
+    * separate colors for CSS selectors (`.`, `#`), Sass directives (`@`), and units (`px`, `em`).
+    * color for `$variables` doesn't clash with tag selectors (`div`, `span`, etc).
+* builtin semantics
+    * better handling of Ruby and Rails semantics.
+
+### Other
+
+* comments use italic style
+* quotation marks use the same color of the strings
+
+
 ## Usage
 
 Requires Ruby 1.9 or greater.
