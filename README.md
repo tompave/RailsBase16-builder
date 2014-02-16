@@ -12,20 +12,38 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 * symbols
     * use a different color from that of the strings.
     * the colon uses the default source color, like the other markers (`@`, `$`).
+
+![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/symbols.jpg)
+
 * ERB
     * `<%=  %>` tags use a color more detectable in HTML files.
     * embedded ruby code has a specific background color (as seen in Railscasts and Sublime's default Cobalt color scheme).
+
+![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/ERB.jpg)
+
 * String Interpolation
     * embedded ruby code uses its normal color, not the string one. 
     * embedded ruby code has a specific background color.
+
+![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/strings.jpg)
+
 * Operators
     * operators (`=`, `+`, `&&`, `and`, etc) use a specific color.
+
+![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/operators.jpg)
+
 * SCSS
     * separate colors for CSS selectors (`.`, `#`), Sass directives (`@`), and units (`px`, `em`).
     * color for `$variables` doesn't clash with tag selectors (`div`, `span`, etc).
     * colors for CSS values.
+
+![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/scss.jpg)
+
 * punctuation
     * improved handling of punctuation
+
+![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/punctuation.jpg)
+
 
 ### Other
 
