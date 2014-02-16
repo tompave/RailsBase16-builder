@@ -43,7 +43,7 @@
 				<key>lineHighlight</key>
 				<string>#<%= @base["06"]["hex"] %></string>
 				<key>selection</key>
-				<string>#<%= @base["06"]["hex"] %></string>
+				<string>#<%= @base["05"]["hex"] %></string>
 			</dict>
 		</dict>
 		<dict>
@@ -66,13 +66,15 @@
 			<dict>
 				<key>foreground</key>
 				<string>#<%= @base["04"]["hex"] %></string>
+				<key>fontStyle</key>
+				<string>italic</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Punctuation</string>
 			<key>scope</key>
-			<string>punctuation.definition.string, punctuation.definition.variable, punctuation.definition.string, punctuation.definition.parameters, punctuation.definition.string, punctuation.definition.array</string>
+			<string>punctuation.definition.variable, punctuation.definition.parameters, punctuation.definition.array, punctuation.definition.constant.ruby, punctuation.definition.keyword, punctuation.definition.entity, punctuationctuation.definition.entity.css, punctuation.section.function, punctuation.separator</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -98,7 +100,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#<%= @base["02"]["hex"] %></string>
+				<string>#<%= @base["0F"]["hex"] %></string>
 			</dict>
 		</dict>
 		<dict>
@@ -193,13 +195,26 @@
 			<key>name</key>
 			<string>Strings, Inherited Class</string>
 			<key>scope</key>
-			<string>string, constant.other.symbol, entity.other.inherited-class</string>
+			<string>string, entity.other.inherited-class, string source string</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#<%= @base["0B"]["hex"] %></string>
 			</dict>
 		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Symbols</string>
+			<key>scope</key>
+			<string>constant.other.symbol</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#<%= @base["09"]["hex"] %></string>
+			</dict>
+		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Integers</string>
@@ -270,7 +285,7 @@
 			<key>name</key>
 			<string>Attribute IDs</string>
 			<key>scope</key>
-			<string>entity.other.attribute-name.id, punctuation.definition.entity</string>
+			<string>entity.other.attribute-name.id</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -320,7 +335,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#<%= @base["09"]["hex"] %></string>
+				<string>#<%= @base["0F"]["hex"] %></string>
 			</dict>
 		</dict>
 		<dict>
@@ -487,7 +502,7 @@
 			<key>name</key>
 			<string>Embedded</string>
 			<key>scope</key>
-			<string>punctuation.section.embedded, variable.interpolation</string>
+			<string>variable.interpolation</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -507,6 +522,63 @@
 				<string>#<%= @base["07"]["hex"] %></string>
 			</dict>
 		</dict>
+
+
+		<dict>
+			<key>name</key>
+			<string>Embedded Source</string>
+			<key>scope</key>
+			<string>string source, text source</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#<%= @base["02"]["hex"] %></string>
+				<key>background</key>
+				<string>#<%= @base["06"]["hex"] %></string>
+			</dict>
+		</dict>
+
+
+
+		<dict>
+			<key>name</key>
+			<string>ERB tags</string>
+			<key>scope</key>
+			<string>text source punctuation.section.embedded, text string source punctuation.section.embedded</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#<%= @base["0D"]["hex"] %></string>
+			</dict>
+		</dict>
+
+
+		<dict>
+			<key>name</key>
+			<string>String Interpolation Chars</string>
+			<key>scope</key>
+			<string>source string source punctuation.section.embedded</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#<%= @base["0D"]["hex"] %></string>
+			</dict>
+		</dict>
+
+
+		<dict>
+			<key>name</key>
+			<string>SCSS variable</string>
+			<key>scope</key>
+			<string>variable.scss</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#<%= @base["0F"]["hex"] %></string>
+			</dict>
+		</dict>
+
+
 	</array>
 	<key>uuid</key>
 	<string><%= @uuid %></string>
