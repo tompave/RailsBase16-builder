@@ -4,7 +4,7 @@ This is a fork of the original [Base16 Builder](https://github.com/chriskempson/
 This fork focusses on supporting the **Ruby** syntax and the **Ruby on Rails** framework (e.g. ERB views).
 It adds a more fine-grained syntax highlighting for specific elements of the Ruby language, but it only supports color schemes for **SublimeText** and **TextMate**.  
 
-The [original base16](https://github.com/chriskempson/base16), on the other hand, is (also) an awesome and flexible system to quickly create color schemes for a variety of editors, IDEs, terminals, browser tools and code parsers. Check the original repo, as it features dynamic examples and documentation on the templates.  
+The [original base16](https://github.com/chriskempson/base16), on the other hand, is (also) an awesome and flexible system to quickly create color schemes for a variety of editors, IDEs, terminals, browser tools and code parsers. Check out the original repo, as it features dynamic examples and documentation on the templates.  
 
 
 ## Improved syntax highlighting
@@ -22,7 +22,7 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 ![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/ERB.jpg)
 
 * String Interpolation
-    * embedded ruby code uses its normal color, not the string one. 
+    * embedded ruby code uses its normal color, not the one of the string.
     * embedded ruby code has a specific background color.
 
 ![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/strings.jpg)
@@ -47,8 +47,8 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 
 ### Other
 
-* comments use italic style
-* quotation marks use the same color of the strings
+* comments use the italic style.
+* quotation marks use the string color.
 
 
 ## Usage
