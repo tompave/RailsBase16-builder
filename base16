@@ -9,6 +9,8 @@ require "base64"
 
 class Theme
   BASE_PATH = File.dirname(__FILE__)
+
+  FILE_NAME_BASE = "RailsBase16"
   
   attr_accessor :template
 
@@ -124,7 +126,7 @@ class Theme
     delimiter = file_name.starts_with?("-") ? "" : "."
 
     output_filename = File.join(output_dir,
-                                "base16-#{scheme_name}#{delimiter}#{file_name}")
+                                "#{FILE_NAME_BASE}-#{scheme_name}#{delimiter}#{file_name}")
     output_file = File.open(output_filename, "w")
     output_file.write(contents)
     output_file.close
