@@ -23,8 +23,9 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 * SCSS
     * separate colors for CSS selectors (`.`, `#`), Sass directives (`@`), and units (`px`, `em`).
     * color for `$variables` doesn't clash with tag selectors (`div`, `span`, etc).
-* builtin semantics
-    * better handling of Ruby and Rails semantics.
+    * colors for CSS values.
+* punctuation
+    * improved handling of punctuation
 
 ### Other
 
