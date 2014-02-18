@@ -143,13 +143,26 @@
 			<key>name</key>
 			<string>Classes</string>
 			<key>scope</key>
-			<string>support.class, entity.name.class, entity.name.type.class</string>
+			<string>support.class, entity.name.class, entity.name.type.class, entity.name.type.module</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#<%= @base["09"]["hex"] %></string>
 			</dict>
 		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Inherited Class</string>
+			<key>scope</key>
+			<string>entity.other.inherited-class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#<%= @base["09"]["hex"] %></string>
+			</dict>
+		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Classes</string>
@@ -196,9 +209,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Strings, Inherited Class</string>
+			<string>Strings</string>
 			<key>scope</key>
-			<string>string, entity.other.inherited-class, string source string</string>
+			<string>string, string source string</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
