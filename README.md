@@ -46,7 +46,7 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 
 
 * module declarations
-    * Module declarations now use the same color of classes declarations, instead of the color reserved to Strings.
+    * Module declarations now use the same color of class declarations, instead of the color reserved to strings.
 
 ![module_class](https://github.com/tompave/RailsBase16-builder/raw/master/images/module_class.jpg)
 
