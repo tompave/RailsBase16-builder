@@ -45,6 +45,17 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 ![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/punctuation.jpg)
 
 
+* module declarations
+    * Module declarations now use the same color of classes declarations, instead of the color reserved to Strings.
+
+![module_class](https://github.com/tompave/RailsBase16-builder/raw/master/images/module_class.jpg)
+
+* block variables
+    * Block variables don't have the same relevance of `@instance` variables, and they should use a different color.
+
+![block_vars](https://github.com/tompave/RailsBase16-builder/raw/master/images/block_vars.jpg)
+
+
 ### Other
 
 * comments use the italic style.
