@@ -9,9 +9,9 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 
 ## Improved syntax highlighting
 
-* symbols
-    * use a different color from that of the strings.
-    * the colon uses the default source color, like the other markers (`@`, `$`).
+* Symbols
+    * Symbols and Strings use different colors.
+    * the colon uses the default punctuation color, like the variable qualifiers (`@`, `$`).
 
 ![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/symbols.jpg)
 
@@ -19,34 +19,39 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
     * `<%=  %>` tags use a color more detectable in HTML files.
     * embedded ruby code has a specific background color (as seen in Railscasts and Sublime's default Cobalt color scheme).
 
-![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/ERB.jpg)
+![ERB](https://github.com/tompave/RailsBase16-builder/raw/master/images/ERB.jpg)
+
+* Haml
+    * separate colors for `%tag`, `.class` and `#id` declarations
+
+![haml](https://github.com/tompave/RailsBase16-builder/raw/master/images/haml.jpg)
 
 * String Interpolation
-    * embedded ruby code uses its normal color, not the one of the string.
+    * embedded ruby code uses appropriate source colors, not the String color.
     * embedded ruby code has a specific background color.
 
-![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/strings.jpg)
+![strings](https://github.com/tompave/RailsBase16-builder/raw/master/images/strings.jpg)
 
 * Operators
     * operators (`=`, `+`, `&&`, `and`, etc) use a specific color.
 
-![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/operators.jpg)
+![operators](https://github.com/tompave/RailsBase16-builder/raw/master/images/operators.jpg)
 
 * SCSS
     * separate colors for CSS selectors (`.`, `#`), Sass directives (`@`), and units (`px`, `em`).
-    * color for `$variables` doesn't clash with tag selectors (`div`, `span`, etc).
-    * colors for CSS values.
+    * the color used for `$variables` doesn't clash with the used for tag selectors (`div`, `span`, etc).
+    * colors for recognized CSS values.
 
-![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/scss.jpg)
+![scss](https://github.com/tompave/RailsBase16-builder/raw/master/images/scss.jpg)
 
 * punctuation
     * improved handling of punctuation
 
-![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/punctuation.jpg)
+![punctuation](https://github.com/tompave/RailsBase16-builder/raw/master/images/punctuation.jpg)
 
 
 * module declarations
-    * Module declarations now use the same color of class declarations, instead of the color reserved to strings.
+    * Module declarations now use the same color of class declarations, instead of the color used by Strings.
 
 ![module_class](https://github.com/tompave/RailsBase16-builder/raw/master/images/module_class.jpg)
 
