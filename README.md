@@ -4,14 +4,14 @@ This is a fork of the original [Base16 Builder](https://github.com/chriskempson/
 This fork focusses on supporting the **Ruby** syntax and the **Ruby on Rails** framework (e.g. ERB views).
 It adds a more fine-grained syntax highlighting for specific elements of the Ruby language, but it only supports color schemes for **SublimeText** and **TextMate**.  
 
-The [original base16](https://github.com/chriskempson/base16), on the other hand, is (also) an awesome and flexible system to quickly create color schemes for a variety of editors, IDEs, terminals, browser tools and code parsers. Check out the original repo, as it features dynamic examples and documentation on the templates.  
+The [original base16](https://github.com/chriskempson/base16), on the other hand, is also an awesome and flexible system to quickly create color schemes for a variety of editors, IDEs, terminals, browser tools and code parsers. Check out the original repo, as it features dynamic examples and documentation on the templates.  
 
 
 ## Improved syntax highlighting
 
 * Symbols
     * Symbols and Strings use different colors.
-    * the colon uses the default punctuation color, like the variable qualifiers (`@`, `$`).
+    * the colon uses the default punctuation color, like variable qualifiers (`@`, `$`).
 
 ![symbols](https://github.com/tompave/RailsBase16-builder/raw/master/images/symbols.jpg)
 
@@ -39,7 +39,7 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 
 * SCSS
     * separate colors for CSS selectors (`.`, `#`), Sass directives (`@`), and units (`px`, `em`).
-    * the color used for `$variables` doesn't clash with the used for tag selectors (`div`, `span`, etc).
+    * the color used for `$variables` doesn't clash with the color used for tag selectors (`div`, `span`, etc).
     * colors for recognized CSS values.
 
 ![scss](https://github.com/tompave/RailsBase16-builder/raw/master/images/scss.jpg)
@@ -51,7 +51,7 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 
 
 * module declarations
-    * Module declarations now use the same color of class declarations, instead of the color used by Strings.
+    * Module declarations now use the same color of class declarations, instead of the String color.
 
 ![module_class](https://github.com/tompave/RailsBase16-builder/raw/master/images/module_class.jpg)
 
@@ -64,7 +64,7 @@ The [original base16](https://github.com/chriskempson/base16), on the other hand
 ### Other
 
 * comments use the italic style.
-* quotation marks use the string color.
+* quotation marks use the String color.
 
 
 ## Usage
