@@ -23,11 +23,11 @@ fi
 # package the theme
 zip $package_file ./* &&
 
-echo "--------------------------------"
-ls -lGFh "./$package_file"
-echo "--------------------------------"
-ls -lGFh "$package_dir"
-echo "--------------------------------"
+# echo "--------------------------------"
+# ls -lGFh "./$package_file"
+# echo "--------------------------------"
+# ls -lGFh "$package_dir"
+# echo "--------------------------------"
 
 # install the theme
 
