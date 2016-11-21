@@ -143,7 +143,7 @@
 			<key>name</key>
 			<string>Classes</string>
 			<key>scope</key>
-			<string>support.class, entity.name.class, entity.name.type.class, entity.name.type.module</string>
+			<string>support.class, entity.name.class, entity.name.type.class, entity.name.module, entity.name.type.module</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -160,6 +160,18 @@
 			<dict>
 				<key>foreground</key>
 				<string>#<%= @base["0A"]["hex"] %></string>
+			</dict>
+		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Class and Module Namespace separators</string>
+			<key>scope</key>
+			<string>meta.module entity.name.module punctuation.accessor.ruby, meta.class entity.name.class punctuation.accessor.ruby, meta.class entity.other.inherited-class punctuation.accessor.ruby</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#<%= @base["05"]["hex"] %></string>
 			</dict>
 		</dict>
 
