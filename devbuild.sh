@@ -7,6 +7,7 @@ package_dir="/Users/Tom/Library/Application Support/Sublime Text 3/Installed Pac
 package_file="DevTheme.sublime-package"
 
 # Build the theme, with just the 80's colors:
+echo "--- building the theme"
 ./base16 schemes/eighties.yml &&
 
 # enter the dir
@@ -14,13 +15,14 @@ pushd "output/textmate" &&
 
 # cleanup
 if [ -f $package_file ]; then
-    echo "removing previous package file"
+    echo "--- removing previous package file"
     rm $package_file
 fi
 
 # rename the theme files
 
 # package the theme
+echo "--- zipping the theme"
 zip $package_file ./* &&
 
 # echo "--------------------------------"
@@ -30,7 +32,7 @@ zip $package_file ./* &&
 # echo "--------------------------------"
 
 # install the theme
-
+echo "--- installing the theme"
 mv "./$package_file" "$package_dir/$package_file"
 
 
